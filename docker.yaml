@@ -1,0 +1,75 @@
+version: "3.7"
+services:
+  gridmantis:
+    container_name: gridmantis
+    image: ambergridpro/gridmantis:${RELEASE}
+    networks:
+      - ambergrid-network
+    environment:
+      - "SPRING_PROFILES_ACTIVE=${PROFILE}"
+      - swap_server=http://swapserver:9000/
+      - lic_server=http://65.20.72.76:3333/
+      - SPRING_DATASOURCE_HOST=mongodb
+      - SPRING_DATASOURCE_PORT=27017
+      - SPRING_DATASOURCE_DB=gridmantis
+      - SPRING_JPA_HIBERNATE_DDL-AUTO=update
+      - SPRING_DATASOURCE_INITIALIZATION-MODE=always
+      - SERVER_PORT=8777
+    ports:
+      - "8777:8777"
+    expose:
+      - "8777"
+    restart:
+      unless-stopped
+    volumes:
+      - ambergrid-volume:/home/app/gridmantis
+    depends_on:
+      - mongodb
+      - swapclient
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 1800 gridmantis swapserver
+  mongodb:
+    container_name: mongodb
+    image: bitnami/mongodb
+    networks:
+      - ambergrid-network
+    volumes:
+      - ambergrid-volume:/home/data/db
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    restart: unless-stopped
+  
+  swapclient:
+    container_name: swapserver
+    image: ambergridpro/swapclient:latest
+    networks:
+      - ambergrid-network
+    volumes:
+      - ambergrid-volume:/app
+    ports:
+      - "9000:9000"
+    expose:
+      - "9000"
+    restart:
+      unless-stopped
+    environment:
+      - PERSONALKEY=${PERSONALKEY}
+      - PUID=1000
+      - PGID=1000
+      - MONGOURL=mongodb://mongodb:27017/gridmantis?retryWrites=true&w=majority
+    restart: unless-stopped
+    depends_on:
+      - mongodb 
+volumes:
+  ambergrid-volume:
+networks:
+  ambergrid-network:
