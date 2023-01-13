@@ -1,0 +1,194 @@
+Container watchtower  Created
+Container mongodb  Created
+Container swapserver  Recreate
+Container swapserver  Recreated
+Container gridmantis  Recreate
+Container gridmantis  Recreated
+Attaching to gridmantis, mongodb, swapserver, watchtower
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.42 [0m
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.44 [0m[1mWelcome to the Bitnami mongodb container[0m
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.45 [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.45 [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.47 [0m
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.49 [0m[38;5;2mINFO [0m ==> ** Starting MongoDB setup **
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:57.57 [0m[38;5;2mINFO [0m ==> Validating settings in MONGODB_* env vars...
+watchtower  | time="2023-01-13T10:34:58Z" level=info msg="Watchtower 1.5.1"
+watchtower  | time="2023-01-13T10:34:58Z" level=info msg="Using no notifications"
+watchtower  | time="2023-01-13T10:34:58Z" level=info msg="Only checking containers which name matches \"gridmantis\" or \"swapserver\""
+watchtower  | time="2023-01-13T10:34:58Z" level=info msg="Scheduling first run: 2023-01-13 11:04:58 +0000 UTC"
+watchtower  | time="2023-01-13T10:34:58Z" level=info msg="Note that the first check will be performed in 29 minutes, 59 seconds"
+mongodb     | [38;5;6mmongodb [38;5;5m10:34:59.78 [0m[38;5;2mINFO [0m ==> Initializing MongoDB...
+mongodb     | [38;5;6mmongodb [38;5;5m10:35:00.09 [0m[38;5;2mINFO [0m ==> Deploying MongoDB with persisted data...
+mongodb     | 
+mongodb     | [38;5;6mmongodb [38;5;5m10:35:00.13 [0m[38;5;2mINFO [0m ==> ** MongoDB setup finished! **
+mongodb     | [38;5;6mmongodb [38;5;5m10:35:00.30 [0m[38;5;2mINFO [0m ==> ** Starting MongoDB **
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.517Z"},"s":"I",  "c":"CONTROL",  "id":5760901, "ctx":"-","msg":"Applied --setParameter options","attr":{"serverParameters":{"enableLocalhostAuthBypass":{"default":true,"value":true}}}}
+mongodb     | 
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.522+00:00"},"s":"I",  "c":"CONTROL",  "id":20698,   "ctx":"-","msg":"***** SERVER RESTARTED *****"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.525+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.529+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.531+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.537+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.537+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.537+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.538+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.539+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/bitnami/mongodb/data/db","architecture":"64-bit","host":"334b65438c83"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.539+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.3","gitVersion":"f803681c3ae19817d31958965850193de067c516","openSSLVersion":"OpenSSL 1.1.1n  15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"debian11","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.539+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"PRETTY_NAME=\"Debian GNU/Linux 11 (bullseye)\"","version":"Kernel 5.15.49-linuxkit"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.539+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"config":"/opt/bitnami/mongodb/conf/mongodb.conf","net":{"bindIp":"*","ipv6":false,"port":27017,"unixDomainSocket":{"enabled":true,"pathPrefix":"/opt/bitnami/mongodb/tmp"}},"processManagement":{"fork":false,"pidFilePath":"/opt/bitnami/mongodb/tmp/mongodb.pid"},"security":{"authorization":"disabled"},"setParameter":{"enableLocalhostAuthBypass":"true"},"storage":{"dbPath":"/bitnami/mongodb/data/db","directoryPerDB":false,"journal":{"enabled":true}},"systemLog":{"destination":"file","logAppend":true,"logRotate":"reopen","path":"/opt/bitnami/mongodb/logs/mongodb.log","quiet":false,"verbosity":0}}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.542+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/bitnami/mongodb/data/db","storageEngine":"wiredTiger"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:00.542+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=1454M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.852+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":4310}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.852+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.912+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":262144,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.932+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.932+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.933+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.946+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:04.951+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/bitnami/mongodb/data/db/diagnostic.data"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:05.070+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:05.073+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:05.078+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/opt/bitnami/mongodb/tmp/mongodb-27017.sock"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:05.078+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:05.080+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+swapserver  | 
+swapserver  | > swapclient@1.0.0 start
+swapserver  | > node app.js
+swapserver  | 
+swapserver  | (node:17) ExperimentalWarning: Importing JSON modules is an experimental feature. This feature could change at any time
+swapserver  | (Use `node --trace-warnings ...` to show where the warning was created)
+gridmantis  | 
+gridmantis  |   .   ____          _            __ _ _
+gridmantis  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+gridmantis  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+gridmantis  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+gridmantis  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+gridmantis  |  =========|_|==============|___/=/_/_/_/
+gridmantis  |  :: Spring Boot ::                (v2.7.6)
+gridmantis  | 
+gridmantis  | 2023-01-13 10:35:13.205  INFO 1 --- [           main] c.mera.gridmantis.GridMantisApplication  : Starting GridMantisApplication using Java 19.0.1 on 8fc7ace9385d with PID 1 (/app/classes started by root in /)
+gridmantis  | 2023-01-13 10:35:13.225  INFO 1 --- [           main] c.mera.gridmantis.GridMantisApplication  : The following 1 profile is active: "prod"
+gridmantis  | 2023-01-13 10:35:17.064  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+gridmantis  | 2023-01-13 10:35:21.019  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3933 ms. Found 8 MongoDB repository interfaces.
+swapserver  | Example app listening on port 9000
+gridmantis  | 2023-01-13 10:35:26.065  WARN 1 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+gridmantis  | 2023-01-13 10:35:26.123  INFO 1 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+gridmantis  | 2023-01-13 10:35:26.124  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12357 ms
+gridmantis  | 2023-01-13 10:35:27.781  INFO 1 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.49-linuxkit"}, "platform": "Java/BellSoft/19.0.1+11"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@740a0d5e]}, clusterSettings={hosts=[mongodb:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:27.826+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.4:60736","uuid":"1b871de5-e455-4c09-be47-91318a760874","connectionId":1,"connectionCount":1}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:27.832+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.4:60750","uuid":"969ba35b-0c99-451b-b17f-716177241647","connectionId":2,"connectionCount":2}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:27.856+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"172.20.0.4:60736","client":"conn1","doc":{"driver":{"name":"mongo-java-driver|sync|spring-boot","version":"4.6.1"},"os":{"type":"Linux","name":"Linux","architecture":"amd64","version":"5.15.49-linuxkit"},"platform":"Java/BellSoft/19.0.1+11"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:27.860+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.20.0.4:60750","client":"conn2","doc":{"driver":{"name":"mongo-java-driver|sync|spring-boot","version":"4.6.1"},"os":{"type":"Linux","name":"Linux","architecture":"amd64","version":"5.15.49-linuxkit"},"platform":"Java/BellSoft/19.0.1+11"}}}
+gridmantis  | 2023-01-13 10:35:27.996  INFO 1 --- [}-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2}] to mongodb:27017
+gridmantis  | 2023-01-13 10:35:27.996  INFO 1 --- [}-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:1}] to mongodb:27017
+gridmantis  | 2023-01-13 10:35:28.015  INFO 1 --- [}-mongodb:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=162082713}
+gridmantis  | 2023-01-13 10:35:31.006 ERROR 1 --- [           main] c.m.g.service.FilesStorageService        : getContent Could not read the file!pk_secure.pub
+mongodb     | {"t":{"$date":"2023-01-13T10:35:32.330+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.4:60760","uuid":"bc215784-1d5f-4ef2-8134-b0ff54a50024","connectionId":3,"connectionCount":3}}
+mongodb     | {"t":{"$date":"2023-01-13T10:35:32.355+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"172.20.0.4:60760","client":"conn3","doc":{"driver":{"name":"mongo-java-driver|sync|spring-boot","version":"4.6.1"},"os":{"type":"Linux","name":"Linux","architecture":"amd64","version":"5.15.49-linuxkit"},"platform":"Java/BellSoft/19.0.1+11"}}}
+gridmantis  | 2023-01-13 10:35:32.660  INFO 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to mongodb:27017
+gridmantis  | 2023-01-13 10:35:40.882  INFO 1 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+gridmantis  | 2023-01-13 10:35:41.635  INFO 1 --- [           main] io.undertow                              : starting server: Undertow - 2.2.20.Final
+gridmantis  | 2023-01-13 10:35:41.659  INFO 1 --- [           main] org.xnio                                 : XNIO version 3.8.7.Final
+gridmantis  | 2023-01-13 10:35:41.698  INFO 1 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+gridmantis  | 2023-01-13 10:35:42.804  INFO 1 --- [           main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+gridmantis  | 2023-01-13 10:35:43.121  INFO 1 --- [           main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8777 (http)
+gridmantis  | 2023-01-13 10:35:43.183  INFO 1 --- [           main] c.mera.gridmantis.GridMantisApplication  : Started GridMantisApplication in 34.164 seconds (JVM running for 42.698)
+gridmantis  | 2023-01-13 10:35:45.184  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating wallets for all chains 
+gridmantis  | 2023-01-13 10:35:52.728  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating balances for Wallet
+gridmantis  | 2023-01-13 10:35:53.417  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating balances for Wallet
+gridmantis  | 2023-01-13 10:35:57.688  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating balances for Wallet
+gridmantis  | 2023-01-13 10:35:57.924  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating balances for Wallet
+gridmantis  | 2023-01-13 10:36:05.056  INFO 1 --- [duler-Tasks---1] c.mera.gridmantis.service.WalletService  : Updating balances for Wallet
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.019+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:48488","uuid":"fd4d51dc-3cf1-48b7-8d6f-4e447120ab48","connectionId":4,"connectionCount":4}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.021+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:48496","uuid":"c3279a36-a465-4972-a074-be0e54a5c5bc","connectionId":5,"connectionCount":5}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.040+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"172.20.0.3:48488","client":"conn4","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.041+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"172.20.0.3:48496","client":"conn5","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.056+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:48506","uuid":"725f9d7b-2ff8-4e2c-825b-fc651a18c3b8","connectionId":6,"connectionCount":6}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.058+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"172.20.0.3:48506","client":"conn6","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+swapserver  | (node:17) [MONGODB DRIVER] Warning: cursor.count is deprecated and will be removed in the next major version, please use `collection.estimatedDocumentCount` or `collection.countDocuments` instead 
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.083+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:48516","uuid":"838a7190-1e9f-4228-b592-eaaad3d5e947","connectionId":7,"connectionCount":7}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:06.085+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"172.20.0.3:48516","client":"conn7","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:16.176+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:41412","uuid":"269d1644-d983-4d41-8725-16d0b4f9ef0c","connectionId":8,"connectionCount":8}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:16.180+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:41424","uuid":"72c93a67-d24b-45b5-aa7f-9fe3c49fa381","connectionId":9,"connectionCount":9}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:16.187+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"172.20.0.3:41412","client":"conn8","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+mongodb     | {"t":{"$date":"2023-01-13T10:36:16.189+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"172.20.0.3:41424","client":"conn9","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+swapserver  | ProcessGridTokenPrices
+mongodb     | {"t":{"$date":"2023-01-13T10:37:05.818+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.3:60894","uuid":"5e71b089-18e9-4e43-b75d-f784ffd6c2c7","connectionId":10,"connectionCount":10}}
+mongodb     | {"t":{"$date":"2023-01-13T10:37:05.861+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"172.20.0.3:60894","client":"conn10","doc":{"driver":{"name":"nodejs","version":"4.13.0"},"os":{"type":"Linux","name":"linux","architecture":"x64","version":"5.15.49-linuxkit"},"platform":"Node.js v18.12.1, LE (unified)|Node.js v18.12.1, LE (unified)"}}}
+swapserver  | ProcessGridTokenPrices
+watchtower  | time="2023-01-13T10:38:48Z" level=info msg="Waiting for running update to be finished..."
+gridmantis  | 2023-01-13 10:38:48.408  INFO 1 --- [ionShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.20.Final
+watchtower exited with code 1
+watchtower exited with code 0
+mongodb     | {"t":{"$date":"2023-01-13T10:38:50.666+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":2885}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:50.688+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"172.20.0.4:60760","uuid":"bc215784-1d5f-4ef2-8134-b0ff54a50024","connectionId":3,"connectionCount":8}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:50.688+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"172.20.0.4:60750","uuid":"969ba35b-0c99-451b-b17f-716177241647","connectionId":2,"connectionCount":9}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:50.696+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"172.20.0.4:60736","uuid":"1b871de5-e455-4c09-be47-91318a760874","connectionId":1,"connectionCount":7}}
+gridmantis exited with code 143
+gridmantis exited with code 0
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.399+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"172.20.0.3:60894","uuid":"5e71b089-18e9-4e43-b75d-f784ffd6c2c7","connectionId":10,"connectionCount":6}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.399+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"172.20.0.3:41424","uuid":"72c93a67-d24b-45b5-aa7f-9fe3c49fa381","connectionId":9,"connectionCount":5}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.401+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"172.20.0.3:41412","uuid":"269d1644-d983-4d41-8725-16d0b4f9ef0c","connectionId":8,"connectionCount":4}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.401+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"172.20.0.3:48516","uuid":"838a7190-1e9f-4228-b592-eaaad3d5e947","connectionId":7,"connectionCount":3}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.403+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn5","msg":"Interrupted operation as its client disconnected","attr":{"opId":2864}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.403+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"172.20.0.3:48506","uuid":"725f9d7b-2ff8-4e2c-825b-fc651a18c3b8","connectionId":6,"connectionCount":2}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.404+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"172.20.0.3:48496","uuid":"c3279a36-a465-4972-a074-be0e54a5c5bc","connectionId":5,"connectionCount":1}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.404+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn4","msg":"Interrupted operation as its client disconnected","attr":{"opId":2865}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.405+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"172.20.0.3:48488","uuid":"fd4d51dc-3cf1-48b7-8d6f-4e447120ab48","connectionId":4,"connectionCount":0}}
+swapserver exited with code 0
+swapserver exited with code 0
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.985+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.986+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.986+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.986+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.990+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.990+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.990+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.990+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.991+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.994+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.995+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/opt/bitnami/mongodb/tmp/mongodb-27017.sock"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.998+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.998+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.998+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:51.998+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.002+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.008+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.009+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.009+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.009+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.012+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.012+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.017+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.020+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.020+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.020+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.020+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.020+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.021+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.021+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.023+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.024+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.026+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.027+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.027+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.028+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.029+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.077+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":48}}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.078+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.078+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.078+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.093+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb     | {"t":{"$date":"2023-01-13T10:38:52.095+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
+mongodb exited with code 0
